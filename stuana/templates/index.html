@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{url_for('static', filename='images/apple-icon.ico')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{url_for('static', filename='images/favicon.ico')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Analysis Hub</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/modal.css')}}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+            
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 40px 250px;
+          border: 1px solid #888;
+          width: 80%;
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s;
+        }
+        @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+        }
+        /* The Close Button */
+        .close, .close2 {
+          color: #aaaaaa;
+          padding: 0px 900px;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close, .close2:hover,
+        .close, .close2:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    </style>
+</head>
+
+<body> 
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#home" class="navbar-brand">
+                    Home
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li><a href="#data">Overall Data Analysis</a></li>
+                    <li><a href="#ut-data">Overall Based on UT</a></li>
+                    <li><a href="#sub">Subject wise Analysis</a></li>
+                    <li><a href="#mks">Marks Wise Categorizations</a></li>
+                    <li><a href="#stu">Individual Analysis </a></li>
+                    <li><a href="#attendance">Attendance</a></li>
+                </ul>
+            </div>
+            <!-- navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="section section-header" id="home">
+        <div class="parallax filter filter-color-black">
+            <div class="image"
+                style="background-image: url({{url_for('static', filename='images/gif1.gif')}}); width: 100%;">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">Welcome to Analysis Hub</h1>
+                        <h5>The complete solution for real time analysis of data.</h5>
+                    </div>
+
+                    <div class="button-get-started">
+                        <a href="#data" class="btn btn-white btn-fill btn-lg ">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><br>
+    <div class="container" id="data">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6" style="text-align: center; margin-top: 10%; ">
+                    <div class="code-header">Overall Data Analysis</div>
+                    <br>
+                    <b>Description</b>
+                    This module centers around the most Minimum, Maximum and Mean of all the values</span>
+                    <button class="button mediumseagreen" id="myBtn">SHOW</button>
+                    <div id="myModal" class="modal"><div class="modal-content"><span class="close">&times;</span>
+                        <div class="chart" id="bargraph">
+                            <script>
+                                var graph1 = {{plot1 | safe}};
+                                
+                                Plotly.plot('bargraph',graph1,{});
+                                
+                            </script>
+                        </div>
+                    </div></div>
+                </div>
+                <div class="col-sm-4"><img src="{{url_for('static', filename='images/green.gif')}}" style="padding: 50px; height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <section id="ut-data">
+        <br><br>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5" style="text-align: center; float: right; font-size: 15px;">
+                        <br><br>
+                        <div class="code-header">Overall Unit-test wise Data Analysis</div>
+                        <br>
+                        <b>Description</b>
+                        This module centers around the most Minimum, Maximum and Mean of all the values</span>
+                        <br><br>
+                        <button class="button mediumseagreen" id="btn2">SHOW</button>
+                        <div id="model2" class="modal"><div class="modal-content"><span class="close2">&times;</span>
+                            <div class="chart" id="utgraph">
+                                <script>
+                                    var graph2 = {{plot2 | safe}};
+                                    
+                                    Plotly.plot('utgraph',graph2,{});
+                                    
+                                </script>
+                            </div>
+                        </div></div>
+                    </div>
+                    <div class="col-sm-3"><img src="{{url_for('static', filename='images/green.gif')}}" style="float: left; padding: 50px; height: 600px;"></div>
+                </div>
+            </div>
+        </div> 
+    </section><br>
+    <hr id="sub">
+    <div >
+        <div class="img-title">
+            <img src="{{url_for('static', filename='images/img.jpg')}}" style="width: 100%; height: 200px; object-fit: cover;">
+            <p class="text-center" style="color: white; text-align: center;">
+                SUBJECT WISE ANALYSIS
+            </p>
+        </div>
+    
+        <div class="tab">
+          <button class="tablinks col-md-4" onclick="openSubject(event, 'Subject wise Analysis')">Subject wise Analysis</button>
+          <button class="tablinks col-md-4" onclick="openSubject(event, 'Subject wise Analysis wrt Unit test')">Subject wise Analysis wrt Unit test</button>
+          <button class="tablinks col-md-4" onclick="openSubject(event, 'Subject wise Analysis wrt Unit tests')">Subject wise Analysis wrt Unit test</button>
+        </div>
+
+            <div id="Subject wise Analysis" class="tabcontent">
+              <h3>Subject wise Analysis</h3>
+              <form class="border" action="/subjectpie" method="post">
+                    <select class="list-items" name="selection"  style="width: 100%;">
+                        <option value="SWS">System and Web Security</option>
+                        <option value="OS">Operating Systems</option>
+                        <option value="IS">Intelligent Systems</option>
+                        <option value="DS">Distributed Systems</option>
+                        <option value="CC">Cloud Computing</option>
+                        <option value="CG">Computer Graphics</option>
+                    </select>
+                    <br><br>
+                    <button class="button mediumseagreen" type="submit" style=" margin: 1; ">Submit</button>
+                    <br><br><br>
+                </form>
+            </div>
+        </div>
+        <div id="Subject wise Analysis wrt Unit test" class="tabcontent">
+          <h3>Subject wise Analysis wrt Unit test</h3>
+          <form class="border" action="/utpieselect" method="post">
+                <select class="list-items" name="selections"  style="width: 100%;">
+                    <option value="SWS">System and Web Security</option>
+                    <option value="OS">Operating Systems</option>
+                    <option value="IS">Intelligent Systems</option>
+                    <option value="DS">Distributed Systems</option>
+                    <option value="CC">Cloud Computing</option>
+                    <option value="CG">Computer Graphics</option>
+                </select>
+                <br><br>
+                <select class="list-items" name="ut"  style="width: 100%;">
+                    <option value="ut1">Unit One</option>
+                    <option value="ut2">Unit Two</option>
+                </select>
+                <br><br>
+                <button class="button mediumseagreen" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="Subject wise Analysis wrt Unit tests" class="tabcontent">
+          <h3>Subject wise Analysis wrt Unit test</h3>
+          <form class="border" action="/horizontalbar" method="post">
+                <select class="list-items" name="selections" style="width: 100%;">
+                    <option value="SWS">System and Web Security</option>
+                    <option value="OS">Operating Systems</option>
+                    <option value="IS">Intelligent Systems</option>
+                    <option value="DS">Distributed Systems</option>
+                    <option value="CC">Cloud Computing</option>
+                    <option value="CG">Computer Graphics</option>
+                </select>
+                <br><br>
+                <select class="list-items" name="uts" style="width: 100%;">
+                    <option value="ut1">Unit Test 1</option>
+                    <option value="ut2">Unit Test 2</option>
+                </select>
+                <br><br>
+                <button class="button mediumseagreen" type="submit">Submit</button>
+            </form>
+        </div><br> 
+        <section id="mks">
+                    <div class="code-header" id="ut-data">
+                        <div class="container-fluid">
+                            <div class="row">
+                            <div class="col-sm-6" style="text-align: center; margin-top: 5%; font-size: 10px; float: right;">
+                                <h1 class="head"><br><br>Marks wise categorization</h1>
+                                    <span class="spans">
+                                        <h3><b>Description</b></h3>
+                                        Category wise displaying the list of students based on marks in particular subjects
+                                    </span><br><br>
+                                    <form action="/markslessthan" method="post">
+                                        <input type="text" name="nos" placeholder="Enter your marks here" style="width: 100%;border: none;  border-bottom:2px solid #23543C; color: #555; font-size: 20px;">
+                                        <br><br><br>
+                                        <select class="list-items" name="selections" style="width: 100%; font-size: 15px;">
+                                            <option value="SWS">System and web security</option>
+                                            <option value="OS">Operating Systems</option>
+                                            <option value="IS">Intelligent System</option>
+                                            <option value="DS">Distributed System</option>
+                                            <option value="CC">Cloud Computing</option>
+                                            <option value="CG">Computer Graphics</option>
+                                        </select>
+                                        <br><br>
+                                        <select class="list-items" name="uts" style="width: 100%; font-size: 15px;">
+                                            <option value="Unit One">Unit Test 1</option>
+                                            <option value="Unit Two">Unit Test 2</option>
+                                        </select>
+                                      
+                                        <button type="submit" class="button mediumseagreen" name="submit">Submit</button>
+                                    </form>
+                                </h1>
+                                <br>
+                            </div>
+                            <div class="col-sm-4">
+                            <img src="{{url_for('static', filename='images/gif3.gif')}}" style="padding: 80px; float: left; width: 150%;">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                    <hr id="stu">
+                    <div class="img-title">
+                    
+                        <div style="background-color:#23543C;background-image: radial-gradient(circle,#23543C,#2a8e5d); width: 100%; height: 300px; background-attachment: fixed;"></div>
+                    
+                        <p class="text-center">
+                            <img src="{{url_for('static', filename='images/galaxy.png')}}" class="round" style="width: 10%; height: 10%;">
+                             INDIVIDUAL ANALYSIS
+                        </p>
+                    </div>
+                    <br>
+                <section>
+                    <div class="codrops-header" id="ut-data">
+                        <div class="container-fluid">
+                            <div class="row slideanim">
+                                <div class="col-sm-3">
+                                    <center>
+                                        <img src="{{url_for('static', filename='images/graph0.png')}}" style="width: 30%;">
+                                            <br>
+                                            <form action="/formone" method="post">
+                                                <button class="button mediumseagreen" type="submit">Click here</button>
+                                            </form>
+                                        <p class="spans">Line Graph UT Wise</p>
+                                    </center>
+                                </div>
+                                <div class="col-sm-3">
+                                    <center>
+                                        <img src="{{url_for('static', filename='images/graph1.png')}}" style="width: 30%;">
+                                        <br>
+                                        <form action="/formtwo" method="post">
+                                            <button class="button mediumseagreen" type="submit">Click here</button>
+                                        </form>
+                                        <p class="spans">CO UT Wise</p>
+                                    </center>
+                                </div>
+                                <div class="col-sm-3">
+                                <center>
+                                    <img src="{{url_for('static', filename='images/graph2.png')}}" style="width: 30%;">
+                                    <br>
+                                    <form action="/formthree" method="post">
+                                        <button class="button mediumseagreen" type="submit">Click here</button>
+                                    </form>
+                                    <p class="spans">Pie Chart Individual</p>
+                                </center>
+                                </div>
+                                <div class="col-sm-3">
+                                    <center>
+                                        <img src="{{url_for('static', filename='images/graph3.png')}}" style="width: 30%;">
+                                        <br>
+                                        <form action="/formfour" method="post">
+                                            <button class="button mediumseagreen" type="submit">Click here</button>
+                                        </form>
+                                        <p class="spans">Whole Pie Chart</p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr id="attendance"><br><br><br>
+                <div class="container" >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6" style="text-align: center; margin-top: 10%; ">
+                                <div class="code-header">Attendance</div>
+                                <br>
+                                <form action="/wholeattendance" method="post">
+                                    <div class="form-group">
+                                        <input type="text" id="attendance" placeholder="Enter percentage" name="nos" style="width: 100%;border: none;  border-bottom:2px solid #23543C; color: #555; font-size: 20px;">
+                                    </div>
+                                    <button type="submit" class="button mediumseagreen" >Submit</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-4"><img src="{{url_for('static', filename='images/box.gif')}}" style="padding: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+    <script>
+        function openSubject(evt, Name) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(Name).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+    
+    <footer class="footer footer-big footer-color-black" data-color="black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="info">
+                        <h5 class="title"></h5>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+            
+        </div>
+    </footer>
+
+</body>
+
+<!--   core js files    -->
+<script src="{{url_for('static', filename='js/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{url_for('static', filename='js/new.js')}}" type="text/javascript"></script>
+<script src="{{url_for('static', filename='js/modal.js')}}" type="text/javascript"></script>
+<script src="{{url_for('static', filename='js/sub_modal.js')}}" type="text/javascript"></script>
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="{{url_for('static', filename='js/modernizr.js')}}"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script type="text/javascript" src="{{url_for('static', filename='js/gaia.js')}}"></script>
+
+
+
+</html>

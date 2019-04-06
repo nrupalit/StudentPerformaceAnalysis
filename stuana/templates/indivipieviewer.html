@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Analysis Bank</title>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='images/favicon.ico')}}" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+            .box {  
+              padding: 50px;
+              border: 1px solid grey;
+              border-radius: 20px;
+              box-shadow:20px 20px 50px grey; 
+            }
+            /* Hexagonal button*/
+            /* General Button Style */
+            .button{
+              position: relative;
+              display:block;
+              background: transparent;
+              width:200px;
+              height:60px;
+              line-height:60px;
+              text-align:center;
+              font-size:15px;
+              text-decoration:none;
+              text-transform:uppercase;
+              margin:40px auto;
+              border:none;
+            }
+            .button:before, .button:after {
+              width:200px;
+              left: 0px;
+              height:30px;
+              z-index: -1;
+            }
+            .mediumseagreen{ color: #23543C; }
+
+            /* Button Border Style */
+
+            .mediumseagreen:before,.mediumseagreen:after {
+              border: 3px solid #23543C;
+            }
+
+            .button:before{
+              position: absolute;
+              content: '';
+              border-bottom: none;
+              
+              transform: perspective(15px) rotateX(5deg);  
+            }
+            .button:after{
+              position: absolute;
+              top: 36px;
+              content: '';
+              border-top: none;
+              transform: perspective(15px) rotateX(-5deg);
+            }
+
+            /* Button Hover Style */
+            .mediumseagreen:hover:before, .mediumseagreen:hover:after {
+              background: #23543C;
+            }
+
+            .button:hover{
+              color:#fff;
+            }
+            .button.border:after{
+            top: 29px;
+            }
+            .button.border:hover:before, .button.border:hover:after {
+            border-bottom: 3px solid #23543C;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <center>
+                  <img src={{a}} class="box">
+                </center>
+                <form action="/indivipieviewer" method="post">
+                    <button class="button mediumseagreen" type="submit"><i class="fa fa-home" style="font-size:60px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
+

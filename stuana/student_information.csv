@@ -1,0 +1,69 @@
+,student_id,student_name,branch,admitted,joining_semester,division,dob,gender,residence_address,x_percentage,xii_percentage,diploma_percentage
+0,EU1134007,Jessica John joseph Mala,IT,2013,1,A,23-11-1995,Female,"Bldg. B-3, Flat No.44, Sector-2, Payal CHS, Shanti Nagar, Mira Rd. (E),MiraRd,401107",90.36,63.17,0.0
+1,EU1134003,Bari Siddhesh Kishor Urmila,IT,2013,1,A,2-11-1995,Male,"At. & Post-Gholwad, (Tokebeach), Tal-Dahanu, Dist-Thane,Gholwad,401702",88.18,58.33,0.0
+2,EU1134024,Bhoi Manali Kishor Jayshree,IT,2013,1,A,30-5-1996,Female,"At. Post-Manor, Tal-Palghar, Dist-Thane,Manor,401403",73.27,48.0,0.0
+3,EU1134022,Chaudhari Asmita Parashar Sushila,IT,2013,1,A,28-1-1996,Female,"B/202, Yashwant Shilp, Vartak Ward, Virar (W),Virar,401303",82.91,56.67,0.0
+4,EU1134021,Dawane Abhidnya Shailesh Manini,IT,2013,1,A,11-4-1996,Male,"D-4/11, Vijay Colony, Post-Tapp, Tal-Palghar, Dist-Thane,Boisar,401504",81.64,51.33,0.0
+5,EU1134020,Goradia Mohak Vikram Nisha,IT,2013,1,A,30-7-1995,Male,"B/406, Hulas Basti Gardens, Opp. Datta Mandir, Mahavir Nagar, Kandivali (W),Kandivali,400067",85.09,55.83,0.0
+6,EU1134014,Jadhav Mandar Sanjay Jayshree,IT,2013,1,A,5-6-1995,Male,"A1/304, Dewan Mansion-1, Ambadi Rd., Vasai (W),Vasai,401202",72.18,62.33,0.0
+7,EU1134016,Jaiswal Sandeepkumar Jagannathprasad Phoolpattidevi,IT,2013,1,A,16-11-1994,Male,"5, Hari Om Krida Mandal, Valmiki Chawl, New Mill Rd., Kurla (W), Mumbai,Kurla,400070",79.07,48.5,0.0
+8,EU1134012,Jha Rajan Akash Nibha,IT,2013,1,A,26-9-1995,Male,"B/2, ardhangini Parvati Apt., Vasant Nagri, Vasai (E),Vasai,401209",78.91,63.83,0.0
+9,EU1134013,Jha Nivedita Laxmikant Sadhna,IT,2013,1,A,6-3-1996,Female,"H-3/2, Siyaram Colony, MIDC, Tarapur, Boisar,Boisar,401506",82.18,67.17,0.0
+10,EU1134002,Joshi Gaurav Laxmikant Sayli,IT,2013,1,A,5-10-1995,Male,"B-101, Lambodar Apt., Siddhivinayak Nagar, Nallasopara (W),Nallasopara,401203",91.82,74.83,0.0
+11,EU1134037,Kantharia Priyank Nitin Neena,IT,2013,1,A,28-8-1995,Male,"B-502,Rahul Sky Build Village,Opp.Shilpin Apt,New SaiBaba Nagar,Kandivali(W),MUMBAI,400067",90.73,70.83,0.0
+12,EU1134015,Kevat Bhavana Mahendra Hoshila,IT,2013,1,A,23-3-1995,Female,"A-102, Kanchan Chhaya Apt., Sukh Sagar Lane, Mahim Rd., Palghar (W),Palghar,401404",88.0,68.17,0.0
+13,EU1134027,Khan Azharuddin Jalaluddin Sarwari,IT,2013,1,A,6-5-1994,Male,"A/202, Prashant Apt., Devisha Rd., Nr. Telephone Exchange, Palghar (W),Palghar,401404",79.82,50.33,0.0
+14,EU1134019,Maladkar Hina Dhanraj Nayna,IT,2013,1,A,13-11-1995,Female,"Maladkar House, Daruwala Compound, S.V.Rd. No.2, Malad (W),Malad,400064",89.4,57.17,0.0
+15,EU1134028,Mathias Arvin felix Francis Leena,IT,2013,1,A,23-4-1995,Male,"B-3, Gul Apt., St. Andrews Rd., Palli Hill, Bandra (W), Mumbai,Bandra,400050",76.0,49.67,0.0
+16,EU1134017,Mudrale Anagha Ravindra Rasika,IT,2013,1,A,15-3-1996,Female,"E-128, Dewan Apt.-2, Navghar Rd., Vasai (E),Vasai,401202",88.73,65.17,0.0
+17,EU1134001,Naik Prathamesh Uday Jaya,IT,2013,1,A,6-5-1996,Male,"G/103, Vrushali Shilp CHS, Chikuwadi, Borivali (W), Mumbai,Borivali,400092",93.64,61.17,0.0
+18,EU1134011,Nair Ashwin Sasidharan Shobha,IT,2013,1,A,17-2-1995,Male,"C-601, Jhelum, Evershine Estate, 100 ft Rd., Vasai (W),Vasai,401202",83.45,67.5,0.0
+19,EU1134018,Nair Prajeesh Kaladharan Usha,IT,2013,1,A,6-6-1995,Male,"B-105, G-15, Diwan & Sons CHS Ltd., Om Nagar, Vasai Rd. (W),Vasai,401202",91.09,79.83,0.0
+20,EU1134005,Nambiar Kirtana Anoopkumar Jyothi,IT,2013,1,A,1-2-1995,Female,"4-B106, Lavender, Yahwant Nagar, Virar (W),Virar,401303",92.18,84.67,0.0
+21,EU1134038,Nandeshwar Bright Deepak Karuna,IT,2013,1,A,17-10-1995,Male,"Flat No.303, Plot No. 196, Sec 6, Shiv Krupa Bldg., Charkop, Kandivali  (W),Kandivali,400067",70.0,49.17,0.0
+22,EU1134035,Nikam Ruchita Vilas Sneha,IT,2013,1,A,7-10-1995,Female,"B-2, 301/Unique Homes, Tirupati Nagar-II, Unitech Rd., Virar (W),Virar,401303",83.4,62.0,0.0
+23,EU1134026,Padwal Pooja Gangadhar Preeti,IT,2013,1,A,5-5-1995,Female,"B-302, Chandresh Pooja, Shankeswar Nagar, Majethia Park, Nallasopara (E),Nallasopara,401209",72.0,53.67,0.0
+24,EU1134009,Pal Anilkumar Mohan Prabhavati,IT,2013,1,A,4-9-1995,Male,"601/B, Raj Enclave, A, Nr. Sevel Eleven Hospital, New Goiden Nest, Bhayander (E),Bhayander,401105",85.64,57.0,0.0
+25,EU1134006,Patil Raj Devendra Manjiri,IT,2013,1,A,5-4-1996,Male,"Nr. Marathi School, Umelman, Vasai (W),Vasai,401202",91.64,71.83,0.0
+26,EU1134025,Patil Vaishnavi Sanjay Jagruti,IT,2013,1,A,16-9-1995,Female,"203, Arihant Apt., Nr. Police Station, At Post- Manor, Tal-Palghar, Dist-Thane,Manor,401403",87.27,56.17,0.0
+27,EU1135017,Raut Sukhada Rajesh Sujata,IT,2013,1,A,7-9-1995,Female,"Om Sai Bunglow,Behind Santan Apt,Near Shani Mandir,Ramedi,Vasai(W),Vasai,401201",90.36,61.67,0.0
+28,EU1134010,Raut Ketan Rajendra Ruchita,IT,2013,1,A,16-10-1995,Male,"D-101, Gorai Jankalyan, Plot No.22, Gorai- 1, Borivali (W),Borivali,400091",78.36,53.17,0.0
+29,EU1134023,Raut Mallika Pramod Prachiti,IT,2013,1,A,3-7-1995,Female,"A/403, Giriraj Tower, Viva College Rd., Virar (W),Virar,401303",75.09,51.83,0.0
+30,EU1134031,Saldanha Leroy Avil Christine,IT,2013,1,A,30-9-1995,Male,"Aminabai Chawl,R/1,Kajuwadi,Chakala,Andheri (E),Mumbai,400099",85.27,58.5,0.0
+31,EU1134034,Sankhe Kaushal Dnyaneshwar Deepa,IT,2013,1,A,27-6-1995,Male,"16/10, Bhaktiyog Co.op. Soc., Boisar (W),Boisar,401501",72.55,48.83,0.0
+32,EU1134008,Shah Mihir Rajnikant Reetaben,IT,2013,1,A,29-7-1995,Male,"R. No.6, Rabari Mekran Chawl, Carter Rd. No.3, Borivali (E), Mumbai,Borivali,400066",72.73,60.0,0.0
+33,EU1134004,Singh Saurabh Rakesh Suman,IT,2013,1,A,30-7-1995,Male,"Khodaram Baug, Bldg. Darshan Niwas, B Wing, R. No.7, Boisar,Boisar,401501",81.64,62.17,0.0
+34,EU1134033,Tiwari Shriya Pankaj Jyoti,IT,2013,1,A,27-2-1995,Female,"Dattanagar Tembhode Rd., Plot No.1, Shiv Shanti, Palghar,Palghar,401404",75.45,51.0,0.0
+35,EU1134029,Yadav Sanjay Dukhran Hirawati,IT,2013,1,A,10-5-1996,Male,"Panchu Purushottam Chawl, Khotwadi, TPS 6th Rd., Santacruz (W),Santacruz,400054",86.73,68.0,0.0
+36,EU2134011,Barabde Pranjal  Sanjiv Sudha,IT,2014,3,A,18-2-1995,Male,"III /10,JASWANDI CHS LTD,,VIRAR,401303",81.64,0.0,70.0
+37,EU2132014,Bolye Prasad Vishwanath Vidhi,IT,2014,3,A,13-1-1996,Male,"3, SHREE VINAYAK SOCIETY, RENUKA NAGAR, NEW LINK RD., KANDIVALI (W), MUMBAI 67,KANDIVALI,400067",78.18,0.0,63.74
+38,EU2134039,Chavan Amey Vishwas Shweta,IT,2014,3,A,24-5-1994,Male,"A/617, SHIV KOKAN NEW SRA BLDG., KURAR VILLAGE, MALAD (E), MUMBAI,MALAD,400097",74.0,0.0,63.87
+39,EU2134020,Chavan Sagar Yashwant Vidya,IT,2014,3,A,1-11-1995,Male,"B-103, POONAM EMPIRE, SHREEPRASTHA, OPP. FUN FIESTA, NALLASOPARA (W),NALLASOPARA,401203",65.09,0.0,65.75
+40,EU2134006,Dalvi Rohit Suresh Suvarna,IT,2014,3,A,10-12-1993,Male,"-B-106, Tania Oasis CHS Ltd, nallasopara,PALGHAR,401209",78.3,0.0,71.81
+41,EU2134036,Konar Dharmik Essakki Manisha,IT,2014,3,A,22-6-1994,Male,"A/16, NEW PATEL CHAWL, BAPU BAGWE RD., KANDARPADA, DAHISAR (W),DAHISAR,400068",73.09,0.0,64.13
+42,EU2134026,Kumbhar Vijay Dinkar Nandini,IT,2014,3,A,13-10-1994,Male,"92/1, GUNDAVLI HILL, AZAD RD., ANDHERI (E), MUMBAI 69,ANDHERI,400069",76.55,0.0,61.68
+43,EU2134007,Mali Vinita Dasharath Damini,IT,2014,3,A,10-11-1995,Female,"A/4, ROYAL POINT, NAVLI PHATAK, KACHERI ROAD, PALGHAR,PALGHAR,401404",79.27,0.0,77.29
+44,EU2134027,Maniar Jigar Satish Ila,IT,2014,3,A,27-2-1995,Male,"21, 2ND FLOOR, GAWAD WADI, VIRAR (E), PANCHRATNA APT.,VIRAR,401305",63.27,0.0,66.97
+45,EU2134010,Manjalkar Aishwarya Gajendra Geetanjali,IT,2014,3,A,3-5-1995,Female,"A/201,SIDDARTH CHS,NALLASOPARA,401203",86.8,0.0,68.13
+46,EU2134014,Mishra Abhishek  Santosh Vimala,IT,2014,3,A,27-7-1996,Male,"R.N-10, Ashtvinayak Soc, Nirabal Chawl, Behind Pragati Classes,Nallasopara,401209",78.8,0.0,0.0
+47,EU2134038,More Shraddha Sharad Sharayu,IT,2014,3,A,9-11-1995,Female,"B/504, OMKAR APT., CHOGLE NAGAR, SAVARPADA RD., BORIVALI (E), MUMBAI 400066,BORIVALI,400066",75.6,0.0,69.68
+48,EU2134009,Naik Prathamesh Jaywant Nirmala,IT,2014,3,A,23-8-1995,Male,"-H-No-654, Ganesh Kripa, Kophrad, Umberuothaw Road, Virar West,VIRAR,401301",78.8,0.0,69.94
+49,EU2134018,Narvekar Puja Shekhar Smita,IT,2014,3,A,18-1-1996,Female,"G/2, JAI SHRUSHTI BLDG.,BHAYANDAR,401105",81.45,0.0,75.68
+50,EU2134022,Panchal Priyanka Mahesh Daxa,IT,2014,3,A,11-5-1995,Female,"H/601, SHALOM JOVE BLDG., PLANETARIA COMPLEX, 150FT. RD., BHAYANDER (W), THANE 401101,BHAYANDER,401101",66.91,0.0,64.81
+51,EU2134034,Patel Aparna Jayantilal Kalpana,IT,2014,3,A,4-2-1994,Female,"TYPE-D, 41/9, BARC COLONY, BOISAR TARAPUR, TAL-PALGHAR, DIST-THANE,PALGHAR,401504",61.8,0.0,69.42
+52,EU2134029,Patel Urvesh Pradeep Mita,IT,2014,3,A,8-8-1996,Male,"MAHIM RD., PALGHAR, MAHADEV SHUKLA CHAWL, DIST-THANE, NR. RAILWAY STATION,PALGHAR,401404",83.64,0.0,63.68
+53,EU2134031,Patil Aishwarya Shridhar Shubhada,IT,2014,3,A,2-8-1995,Female,"AT. VARKHUNTI, NR. G.P.OFFICE, HOUSE NO.414, TAL-PALGHAR, DIST-THANE,PALGHAR,401404",77.82,0.0,66.58
+54,EU2134033,Patil Tanuja Vijay Vaijayanti,IT,2014,3,A,1-12-1994,Female,"AT POST-PAROL, TAL-VASAI, DIST-PALGHAR,VASAI,401303",81.64,0.0,65.81
+55,EU2134024,Patil Asmit Naresh Bharati,IT,2014,3,A,11-6-1996,Male,"GASS LAST STOP, NR. DURGAMATA HOTEL, NALLASOPARA (W), TAL-VASAI, DIST-PALGHAR,NALLASOPARA,401203",90.55,0.0,73.61
+56,EU2134032,Patil Sonali Rajendra Reshma,IT,2014,3,A,7-12-1994,Female,"AT POST-BAWDA, TAL-DAHANU, DIST-PALGHAR, VANGAON (W),VANGAON,401103",78.36,0.0,68.0
+57,EU2134030,Raut Kalpit Rajendra Rajashree,IT,2014,3,A,5-1-1996,Male,"203, MOHAN APT., VEER SAVARKAR MARG, NR. SAI BABA MANDIR, VIRAR (E),VIRAR,401305",76.73,0.0,61.31
+58,EU2134021,Rohela Arpit Madan Anita,IT,2014,3,A,27-8-1995,Male,"A-003/M-6, CHANDANBALA OSTWAL EMPIRE, BOISAR,BOISAR,401501",74.18,0.0,55.94
+59,EU2134028,Save Prashil Ravindra Pramila,IT,2014,3,A,1-2-1994,Male,"102, ROYAL ASHIYANA BLDG., NR. MIRA NAGAR, TAL-PALGHAR, DIST-THANE,PALGHAR,401102",54.62,0.0,61.42
+60,EU2134019,Sawant Shraddha Subhash Sushma,IT,2014,3,A,18-8-1993,Female,"B/305, Yashwant Arcade, Kasturba Rd. No.7, Nr. Borivali Stn., Borivali (E), Mumbai 66,Borivali,400066",62.77,0.0,73.81
+61,EU2134023,Shahapurkar Payal Pramod Priya,IT,2014,3,A,14-9-1995,Female,"GULMOHAR COMPLEX, PHASE II, E-204, M.B.ESTATE, RAM MANDIR RD., VIRAR (W), DIST-PALGHAR,VIRAR,401305",80.55,0.0,71.94
+62,EU2134013,Shinde Sheetal Mahadev Shobha,IT,2014,3,A,10-4-1995,Female,"SHARDA CO-OPERATIVE SOCIETY, SAMELPADA,,NALLASOPARA,401203",53.8,0.0,0.0
+63,EU2134025,Shinde Aishwarya Raghunath Mangiree,IT,2014,3,A,2-10-1995,Female,"602, KUSH RESIDENCY, ANAND NAGAR, DAHISAR (E), MUMBAI,DAHISAR,400068",79.82,0.0,68.26
+64,EU2134035,Suryavanshi Sourabh Dayanand Sangita,IT,2014,3,A,17-3-1996,Male,"B-002, KRISHNA RESIDENCY, VIVA VRINDAVAN TOWNSHIP, VIRAR (W),VIRAR,401303",63.82,0.0,65.94
+65,EU2134008,Vartak Mrunmayee Nitin Rita,IT,2014,3,A,22-4-1994,Female,"harshada nagar, tal & dist: palghar saphale,virar,401102",73.38,0.0,70.39
+66,EU2134037,Wagh Shweta Sunil Nirmala,IT,2014,3,A,3-6-1996,Female,"1/21, ARUNODAY CO.OP SOCIETY LTD., GORAI-2, BORIVALI (W), MUMBAI 400 092,BORIVALI,400092",77.82,0.0,65.03
+67,EU2134004,Yenare Priti Sunil Vrushali,IT,2014,3,A,5-7-1995,Female,"EKC STAFF COLONY RH.73,BOISAR,401501",83.09,0.0,0.0

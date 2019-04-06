@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Analysis Bank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='images/favicon.ico')}}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function liveSearch(value) {
+            value = value.trim(); // remove any spaces around the text
+            if (value != "") { // don't make requests with an empty string
+                $.ajax({
+                    url: "search",
+                    data: {
+                        searchText: value
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        var res = "";
+                        // create the html with results
+                        for (i in data.results) {
+                            res += '<li class="list-group-item link-class">' + data.results[i] + '</li>';
+                        }
+                        $("#results").html(res);
+                    }
+
+                });
+                $('#results').on('click', 'li', function () {
+                    var click_text = $(this).text().split('|');
+                    $('#search').val($.trim(click_text[0]));
+                    $("#results").html('');
+                });
+            } else {
+                $("#results").html(""); // set the results empty in case of empty string
+            }
+        }
+    </script>
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/select2/select2.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+
+<body>
+
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="/coutwise" method="post">
+                <span class="contact100-form-title">
+                    Line Graph of individual subjects of individual students Unit Test Wise
+                </span>
+
+
+                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                    <label class="label-input100" for="name">Full name</label>
+                    <input class="input100" type="text" placeholder="Enter your name" name="search" id="search" onkeyup="liveSearch(this.value)">
+                    <ul class="list-group" id="results"></ul>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100">
+                    <div class="label-input100">Subjects:</div>
+                    <div>
+                        <select class="js-select2" name="selections">
+                            <option value="SWS">System and Web Security</option>
+                            <option value="OS">Operating Systems</option>
+                            <option value="IS">Intelligent Systems</option>
+                            <option value="DS">Distributed Systems</option>
+                            <option value="CC">Cloud Computing</option>
+                            <option value="CG">Computer Graphics</option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100">
+                    <div class="label-input100">Subjects:</div>
+                    <div>
+                        <select class="js-select2" name="uts">
+                            <option value="ut1">Unit Test 1</option>
+                            <option value="ut2">Unit Test 2</option>
+                            <option value="Internal Assessment">Internal Assessment</option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                    <span class="focus-input100"></span>
+                </div>
+
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+            <div class="contact100-more flex-col-c-m" style="background-image: url('static/images/gif6.gif');">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="{{url_for('static', filename='js/jquery/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/select2/select2.min.js')}}"></script>
+    <script>
+        $(".js-select2").each(function () {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+        })
+        $(".js-select2").each(function () {
+            $(this).on('select2:open', function (e) {
+                $(this).parent().next().addClass('eff-focus-selection');
+            });
+        });
+        $(".js-select2").each(function () {
+            $(this).on('select2:close', function (e) {
+                $(this).parent().next().removeClass('eff-focus-selection');
+            });
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+</body>
+
+</html>
