@@ -8,3 +8,7 @@ The analysis is useful for other areas also. Like for college administrators the
 
 https://user-images.githubusercontent.com/32727924/113139170-62ec0b00-9244-11eb-98d8-1a946569e67d.mp4
 
+![Screenshot (21)](https://user-images.githubusercontent.com/32727924/113140142-a2672700-9245-11eb-935f-232662f304e9.png)
+![Screenshot (22)](https://user-images.githubusercontent.com/32727924/113140151-a4c98100-9245-11eb-9722-943e51c1eb9c.png)
+![Screenshot (23)](https://user-images.githubusercontent.com/32727924/113140152-a5621780-9245-11eb-822c-42725907c6b2.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/32727924/113140155-a5faae00-9245-11eb-835d-7f2b25add4dd.png)
